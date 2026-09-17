@@ -25,14 +25,11 @@
       "API_KEY": {
         "description": "API key for request signing."
       },
-      "AES_KEY_ASCII": {
-        "description": "AES key (ASCII) for payload crypto."
+      "CIRCLE_MSISDN_KEY": {
+        "description": "CIRCLE_MSISDN_KEY for payload crypto."
       },
       "AX_FP_KEY": {
         "description": "Fingerprint derivation key."
-      },
-      "AX_FP": {
-        "description": "Default device fingerprint (32-char hex) — per-user overrides live in R2."
       },
       "ENCRYPTED_FIELD_KEY": {
         "description": "Key for encrypted form fields."
