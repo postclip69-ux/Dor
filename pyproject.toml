@@ -1,0 +1,2 @@
+[tool.vercel]
+entrypoint = "webui.app:app"
