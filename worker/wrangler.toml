@@ -1,4 +1,4 @@
-name = "webui-xl"
+name = "dor"
 main = "src/index.ts"
 compatibility_date = "2026-06-01"
 compatibility_flags = ["nodejs_compat"]
@@ -31,13 +31,13 @@ vars = { ENVIRONMENT = "staging" }
 
 [[env.staging.d1_databases]]
 binding = "DB"
-database_name = "webui-xl-staging"
-database_id = "c6d9c50a-ec5d-4999-8c24-7c85d432dd62"
+database_name = "dor-db"
+database_id = "a1cf7f74-fcbc-49a2-9112-664a45f53ae8"
 migrations_dir = "migrations"
 
 [[env.staging.r2_buckets]]
 binding = "DATA"
-bucket_name = "webui-xl-staging-data"
+bucket_name = "dor-storage"
 
 # [[env.staging.queues.producers]]
 # binding = "PURCHASE_QUEUE"
@@ -60,7 +60,7 @@ bucket_name = "webui-xl-staging-data"
 # Production — deploy: npx wrangler deploy --env production
 # ---------------------------------------------------------------------------
 [env.production]
-name = "webui-xl"
+name = "dor"
 vars = { ENVIRONMENT = "production" }
 
 # Uncomment and set your hostname after adding the domain in Cloudflare dashboard:
@@ -68,13 +68,13 @@ vars = { ENVIRONMENT = "production" }
 
 [[env.production.d1_databases]]
 binding = "DB"
-database_name = "webui-xl"
-database_id = "b16350cf-1dc8-48ff-8a53-affb7346d7d6"
+database_name = "dor-db"
+database_id = "a1cf7f74-fcbc-49a2-9112-664a45f53ae8"
 migrations_dir = "migrations"
 
 [[env.production.r2_buckets]]
 binding = "DATA"
-bucket_name = "webui-xl-data"
+bucket_name = "dor-storage"
 
 # [[env.production.queues.producers]]
 # binding = "PURCHASE_QUEUE"
